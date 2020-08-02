@@ -7,8 +7,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 def get_device_id():
-    file_name = os.path.dirname(os.path.abspath(__file__)) + r'\abck.html'
-    print(file_name)
     d = DesiredCapabilities.CHROME
     d['goog:loggingPrefs'] = {'browser': 'ALL'}
     chromeoptions = chromeopt()
